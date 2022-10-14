@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { UserContext } from '../../contexts/UserContext';
+import { UserContext } from "../../context/UserContext";
 import miLogo from '../../assets/tornado.png';
 import './Navigation.css';
 
@@ -14,6 +14,7 @@ const Navigation = () => {
         if (userStored) {
             setCurrentUser(JSON.parse(userStored))
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleSignOut = () => {

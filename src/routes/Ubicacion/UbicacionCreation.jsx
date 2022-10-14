@@ -2,12 +2,12 @@ import "./UbicacionCreation.css";
 import { useContext} from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { LocationsContext } from "../../contexts/UbicacionesContext";
-import {getLocations} from "../../service"
+import { UbicacionesContext } from "../../context/UbicacionesContext";
+import { getLocations } from "../../service"
 
 
 const LocationCreation = () => {
-  const { locations, setLocations } = useContext(LocationsContext)
+  const { locations, setLocations } = useContext(UbicacionesContext)
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
