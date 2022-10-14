@@ -33,19 +33,19 @@ const Navigation = () => {
         <div className='nav-links-container'>
             {currentUser ? (
                 <Link className='nav-link enter' to='location/create'>
-                    Nueva Ubicacion
+                    Nueva Ubicación
                 </Link>
             ) : (
-                <span className='nav-link'>Nueva Ubicacion</span>
+                <span className='nav-link'>Nueva Ubicación</span>
             )}
 
             {currentUser ? (
                 <span className='nav-link sign-out' onClick={handleSignOut}>
-                    Cerrar Sesion
+                    Cerrar Sesión
                 </span>
             ) : (
                 <Link className='nav-link sign-in' to='/'>
-                    Iniciar Sesion
+                    Iniciar Sesión
                 </Link>
             )}
         </div>

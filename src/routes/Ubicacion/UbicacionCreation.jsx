@@ -27,7 +27,7 @@ const LocationCreation = () => {
        })
       .catch((err) => console.log(err));
     
-    navigate('/')
+    navigate('/home')
   }
 
   const { register, handleSubmit, formState: { errors } } = useForm()

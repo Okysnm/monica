@@ -16,30 +16,34 @@ const Login = () => {
     }
     return (
         <div className="sign-in-container">
-            <span>Ingresar usuario y contraseña</span>
-            <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
-                <input 
-                    className="input-form"
-                    type="text"
-                    placeholder="nombre de usuario"
-                    { ...register('username', {
-                        required : 'Ingrese su nombre de usuario'
-                        }
-                    )} 
-                />
-                <p>{errors.username?.message}</p>
-                <input
-                    className="input-form"
-                    type='password'
-                    placeholder="Contraseña"
-                    {...register('password', {
-                        required : 'Ingrese su contraseña'
-                        }
-                    )}
-                />
-                <p>{errors.password?.message}</p>
-                <button className="btn-form" type="submit">Iniciar Sesion</button>
-            </form>
+            <div className="login-screen">
+                <div className="app-title">
+                    <h1>Iniciar Sesión</h1>
+                </div>
+                <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
+                    <input 
+                        className="input-form"
+                        type="text"
+                        placeholder="Nombre de usuario"
+                        { ...register('username', {
+                            required : 'Ingrese su nombre de usuario'
+                            }
+                        )} 
+                    />
+                    <p>{errors.username?.message}</p>
+                    <input
+                        className="input-form"
+                        type='password'
+                        placeholder="Contraseña"
+                        {...register('password', {
+                            required : 'Ingrese su contraseña'
+                            }
+                        )}
+                    />
+                    <p>{errors.password?.message}</p>
+                    <button className="btn-form" type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
         </div>
     )
 }
