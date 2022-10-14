@@ -1,9 +1,9 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
-import Home from './routes/Home/Home';
+import Home from './routes/home/home';
 import Navigation from './routes/Navigation/Navigation';
-import Login from './routes/Login/Login';
-import LocationCreation from './routes/Ubicacion/UbicacionCreation';
+import Login from './routes/login/Login';
+import UbicacionCreation from './routes/Ubicacion/UbicacionCreation';
 
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Route path='/' element={<Navigation/>}>
             <Route index element={<Login/>}/>
             <Route path='/home' element={<Home/>}/>
-            <Route path='location/create' element={<LocationCreation/>}/>
-          </Route>
+            <Route path='ubicacion/create' element={<UbicacionCreation/>}/>
+        </Route>
         </Routes>
       </div>
   );
