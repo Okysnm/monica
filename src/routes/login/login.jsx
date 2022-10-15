@@ -21,14 +21,14 @@ const Login = () => {
                     <h1>Iniciar Sesión</h1>
                 </div>
                 <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
-                    <input 
+                    <input
                         className="input-form"
                         type="text"
                         placeholder="Nombre de usuario"
-                        { ...register('username', {
-                            required : 'Ingrese su nombre de usuario'
-                            }
-                        )} 
+                        {...register('username', {
+                            required: 'Ingrese su nombre de usuario'
+                        }
+                        )}
                     />
                     <p>{errors.username?.message}</p>
                     <input
@@ -36,8 +36,8 @@ const Login = () => {
                         type='password'
                         placeholder="Contraseña"
                         {...register('password', {
-                            required : 'Ingrese su contraseña'
-                            }
+                            required: 'Ingrese su contraseña'
+                        }
                         )}
                     />
                     <p>{errors.password?.message}</p>

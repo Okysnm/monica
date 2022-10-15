@@ -6,6 +6,7 @@ import Login from './routes/Login/login';
 import UbicacionCreation from './routes/Ubicacion/UbicacionCreation';
 import { UbicacionesContext } from './context/UbicacionesContext';
 import { useContext, useEffect } from 'react';
+import UbicacionDisplay from './routes/Ubicacion/UbicacionDisplay';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path='Login' element={<Login/>}/>
             <Route path='ubicacion/create' element={<UbicacionCreation/>}/>
+            <Route path='ubicacion/:id' element={<UbicacionDisplay/>} />
         </Route>
         </Routes>
       </div>

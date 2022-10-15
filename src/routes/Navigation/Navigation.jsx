@@ -31,6 +31,9 @@ const Navigation = () => {
           <img src={miLogo} alt='Logo' className='logo' />
         </Link>
         <div className='nav-links-container'>
+            <Link className='nav-link enter' to='/'>
+              Home
+            </Link>
             {currentUser ? (
                 <Link className='nav-link enter' to='ubicacion/create'>
                     Nueva Ubicación

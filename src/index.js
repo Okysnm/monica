@@ -12,9 +12,9 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <UserProvider>
-      <UbicacionesProvider>
-            <App /> 
-      </UbicacionesProvider>
+        <UbicacionesProvider>
+          <App />
+        </UbicacionesProvider>
       </UserProvider>
     </HashRouter>
   </React.StrictMode>

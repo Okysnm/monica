@@ -1,4 +1,4 @@
-.card {
+.card-ubi {
   display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 210px 210px 80px;
@@ -11,7 +11,7 @@
   margin: 30px;
 }
 
-.card-image {
+.card-image-ubi {
   grid-area: "image";
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -19,28 +19,23 @@
   width: 100%;
 }
 
-.card-text {
+.card-text-ubi {
 grid-area: text;
   margin: 20px;
 }
 
-.card-text .date {
-  color: rgb(255, 7, 110);
-  font-size:13px;
-}
-
-.card-text p {
+.card-text-ubi p {
   color: grey;
   font-size:15px;
   font-weight: 300;
 }
 
-.card-text h3 {
+.card-text-ubi h3 {
   margin-top:0px;
   font-size:28px;
 }
 
-.card-stats {
+.card-stats-ubi {
   grid-area: "stats"; 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -50,7 +45,7 @@ grid-area: text;
   background: rgb(255, 7, 110);
 }
 
-.card-stats .stat {
+.card-stats-ubi .stat-ubi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,26 +54,30 @@ grid-area: text;
   padding:10px;
 }
 
-.card:hover {
+.card-ubi:hover {
   transform: scale( 1.10 ) ;
   box-shadow: 5px 5px 15px rgba( 0 , 0 , 0 , 0.6 ) ;
 }
           
-.fav {
+.fav-ubi {
   display: flex;
   text-align: center;
-  height: 34px;
-  width: 34px;
+  height: 16px;
+  width: 20px;
   justify-content: center;
   align-items: center;
   border: 1px solid #0000005e;
   padding: 5px;
-  margin: 5px;
+  margin: 3px;
   border-radius: 5px;
   transition: background-color 0.2s ease;
 }
 
-.fav:hover {
+.fav-ubi:hover {
   cursor: pointer;
   background-color: rgb(112, 8, 52);
+}
+
+.expand-ubi{
+  color: white;
 }
