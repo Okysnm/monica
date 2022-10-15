@@ -6,7 +6,7 @@ const Ubicaciones = ({ ubicaciones }) => {
   return (
     <div className='grid'>
       {ubicaciones.map((ubicacion) => (
-        <Location key={ubicacion.id} ubicacion={ubicacion} />
+        <Ubicacion key={ubicacion.id} ubicacion={ubicacion} />
       ))}
     </div>
   );

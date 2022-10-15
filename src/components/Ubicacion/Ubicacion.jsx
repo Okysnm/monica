@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LocationsContext } from "../../context/UbicacionesContext";
+import { UbicacionesContext } from "../../context/UbicacionesContext";
 import "./Ubicacion.css";
 import { BsTrash } from "react-icons/bs";
 
@@ -12,14 +12,14 @@ const Ubicacion = ({ ubicacion }) => {
     lon,
     temperature,
     windspeed,
-  } = location;
+  } = ubicacion;
 
   const handleAnchorClick = () => {
     const filteredItems = ubicaciones.filter(function(item)
     {
       return item.id !== id;
     });
-    setLocations(filteredItems);
+    setUbicaciones(filteredItems);
   }
 
   return (

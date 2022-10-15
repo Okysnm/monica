@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { UserContext } from "../../context/UserContext";
 import miLogo from '../../assets/tornado.png';
 import './Navigation.css';
@@ -7,7 +7,7 @@ import './Navigation.css';
 
 const Navigation = () => {
     const { currentUser, setCurrentUser } = useContext(UserContext);
-    const navigate = useNavigate();
+  //  const navigate = useNavigate();
 
     useEffect(() => {
         const userStored = localStorage.getItem('currentUser')
@@ -20,8 +20,8 @@ const Navigation = () => {
 
     const handleSignOut = () => {
         setCurrentUser(null);
-        localStorage.setItem('currentUser', null);
-        navigate('/');
+ //       localStorage.setItem('currentUser', null);
+ //       navigate('/');
     };
 
   return (
@@ -44,7 +44,7 @@ const Navigation = () => {
                     Cerrar Sesión
                 </span>
             ) : (
-                <Link className='nav-link sign-in' to='/'>
+                <Link className='nav-link sign-in' to='/login'>
                     Iniciar Sesión
                 </Link>
             )}

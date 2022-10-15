@@ -3,31 +3,31 @@ import { useContext} from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { UbicacionesContext } from "../../context/UbicacionesContext";
-import { getLocations } from "../../service"
+import { getUbicaciones } from "../../service"
 
 
-const LocationCreation = () => {
-  const { locations, setLocations } = useContext(UbicacionesContext)
+const UbicacionCreation = () => {
+  const { ubicaciones, setUbicaciones } = useContext(UbicacionesContext)
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
     
-    getLocations(data.lat,data.lon)
+    getUbicaciones(data.lat,data.lon)
       .then((datas) =>  {
-        const locationNew ={
-          id: locations.length + 1,
+        const ubicacionNew ={
+          id: ubicaciones.length + 1,
           country: data.country,
           lat:data.lat,
           lon:data.lon,
           temperature:datas.current_weather.temperature,
           windspeed:datas.current_weather.windspeed,
         }
-        setLocations([...locations, locationNew])
+        setUbicaciones([...ubicaciones, ubicacionNew])
         console.log(datas);
        })
       .catch((err) => console.log(err));
     
-    navigate('/home')
+    navigate('/')
   }
 
   const { register, handleSubmit, formState: { errors } } = useForm()
@@ -59,5 +59,5 @@ const LocationCreation = () => {
 }
 
 
-export default LocationCreation;
+export default UbicacionCreation;
 
