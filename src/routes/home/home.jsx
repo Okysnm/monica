@@ -1,4 +1,4 @@
-import './home.css';
+import './Home.css';
 import Ubicaciones from '../../components/Ubicacion/Ubicaciones';
 import { useContext } from 'react';
 import { UbicacionesContext } from '../../context/UbicacionesContext';
@@ -6,13 +6,13 @@ import { UbicacionesContext } from '../../context/UbicacionesContext';
 
 
 const Home = () => {
-  const { ubicaciones} = useContext(UbicacionesContext)
+  const { ubicaciones } = useContext(UbicacionesContext)
   //<Locations locations={locations}></Locations>
   return (
     <>
       <div className='main-container'>
-      <Ubicaciones ubicaciones={ubicaciones}></Ubicaciones>
-        
+        <h1 className='title'>Ubicaciones</h1>
+        <Ubicaciones ubicaciones={ubicaciones}></Ubicaciones>
       </div>
     </>
   );

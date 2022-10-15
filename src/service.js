@@ -1,5 +1,5 @@
-const lat = '';
-const lon = '';
+//const lat = '';
+//const lon = '';
 
 const SERVER_DOMAIN = 'https://api.open-meteo.com/v1';
 

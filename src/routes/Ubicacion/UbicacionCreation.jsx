@@ -21,6 +21,7 @@ const UbicacionCreation = () => {
           lon:data.lon,
           temperature:datas.current_weather.temperature,
           windspeed:datas.current_weather.windspeed,
+          photo_url:data.photo_url
         }
         setUbicaciones([...ubicaciones, ubicacionNew])
         console.log(datas);
@@ -50,6 +51,10 @@ const UbicacionCreation = () => {
       type="text" 
       placeholder="Indique la Longitud" 
       {...register("lon", 
+      {required: true})} />
+      <input className="form-control" 
+      type="text" placeholder="URL FOTO" 
+      {...register("photo_url", 
       {required: true})} />
         <button className='btn-form' type='submit'>
           Crear Ubicacion

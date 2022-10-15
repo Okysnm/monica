@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { UserContext } from "../../context/UserContext";
-import miLogo from '../../assets/tornado.png';
+import miLogo from '../../assets/logo.png';
 import './Navigation.css';
 
 
