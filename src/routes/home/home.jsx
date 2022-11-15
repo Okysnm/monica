@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className='main-container'>
-        <h1 className='title'>Ubicaciones</h1>
+        <h1 className='title'>Pachamama de Sabores</h1>
         <Ubicaciones ubicaciones={ubicaciones}></Ubicaciones>
       </div>
     </>

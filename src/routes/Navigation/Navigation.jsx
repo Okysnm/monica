@@ -30,7 +30,7 @@ const Navigation = () => {
         <Link className='logo-container' to='/'>
           <img src={miLogo} alt='Logo' className='logo' />
         </Link>
-        <div className='nav-links-container'>
+{/*         <div className='nav-links-container'>
             <Link className='nav-link enter' to='/'>
               Home
             </Link>
@@ -51,8 +51,8 @@ const Navigation = () => {
                     Iniciar Sesión
                 </Link>
             )}
-        </div>
-      </div>
+        </div> 
+ */}      </div>
       <Outlet />
     </>
   );
