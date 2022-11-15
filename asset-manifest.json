@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/monica/static/css/main.73256f44.css",
-    "main.js": "/monica/static/js/main.095fc6ab.js",
+    "main.css": "/monica/static/css/main.43fa9cad.css",
+    "main.js": "/monica/static/js/main.5a20baa3.js",
     "static/js/787.88791245.chunk.js": "/monica/static/js/787.88791245.chunk.js",
-    "static/media/fondo.jpg": "/monica/static/media/fondo.b232fd242179c27c162e.jpg",
+    "static/media/fondo2.jpg": "/monica/static/media/fondo2.27fb5511c57e8d38d78b.jpg",
     "static/media/logo.png": "/monica/static/media/logo.1bb314346a507b679ff6.png",
     "index.html": "/monica/index.html",
-    "main.73256f44.css.map": "/monica/static/css/main.73256f44.css.map",
-    "main.095fc6ab.js.map": "/monica/static/js/main.095fc6ab.js.map",
+    "main.43fa9cad.css.map": "/monica/static/css/main.43fa9cad.css.map",
+    "main.5a20baa3.js.map": "/monica/static/js/main.5a20baa3.js.map",
     "787.88791245.chunk.js.map": "/monica/static/js/787.88791245.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73256f44.css",
-    "static/js/main.095fc6ab.js"
+    "static/css/main.43fa9cad.css",
+    "static/js/main.5a20baa3.js"
   ]
 }
