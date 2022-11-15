@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/monica.git/static/css/main.517100b6.css",
+    "main.js": "/monica.git/static/js/main.c5e012d3.js",
+    "static/js/787.88791245.chunk.js": "/monica.git/static/js/787.88791245.chunk.js",
+    "static/media/fondo.jpg": "/monica.git/static/media/fondo.b232fd242179c27c162e.jpg",
+    "static/media/logo.png": "/monica.git/static/media/logo.1bb314346a507b679ff6.png",
+    "index.html": "/monica.git/index.html",
+    "main.517100b6.css.map": "/monica.git/static/css/main.517100b6.css.map",
+    "main.c5e012d3.js.map": "/monica.git/static/js/main.c5e012d3.js.map",
+    "787.88791245.chunk.js.map": "/monica.git/static/js/787.88791245.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.517100b6.css",
+    "static/js/main.c5e012d3.js"
+  ]
+}
